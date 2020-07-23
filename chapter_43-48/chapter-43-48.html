@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+#main{
+    background: Black;
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+
+}
+
+.s{
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    width: 90px;
+    height: 20px;
+}
+.b{
+    display: inline-block;
+    margin-top: 5px;
+    width: 80px;
+}
+
+
+
+</style>
+
+<body>
+    <img src="mbl1.jpg" onclick="vivo()" alt="VIVO">
+    <img class="pic" id='car1' src="mbl2.jpg" onmouseover="hid()" onmouseout="show()" onclick="Nkia()" alt="Nokia">
+
+    <table>
+        <h1>Index Name Class</h1>
+        <tr id="r1">
+            <td>0</td>
+            <td>Jhone 10</td>
+            <td><button onclick="getId('r1')">Delete</button></td>
+        </tr>
+        <tr id="r2">
+            <td>1</td>
+            <td>Mark 10</td>
+            <td><button onclick="getId('r2')">Delete</button></td>
+        </tr>
+        <tr id="r3">
+            <td>2</td>
+            <td>James 8</td>
+            <td><button onclick="getId('r3')">Delete</button></td>
+        </tr>
+        <tr id="r4">
+            <td>3</td>
+            <td>Doe 9</td>
+            <td><button onclick="getId('r4')">Delete</button></td>
+        </tr>
+
+    </table>
+    <div id="main">
+        <div id="screen">
+            <div class="s" id="min">0</div>
+            <div class="s" id="sec">0</div>
+            <div class="s" id="msec">0</div>
+        </div>
+        <div id="btn">
+            <button class="b" id="strt" onclick="start()">Start</button>
+            <button class="b" id="stop" onclick="stop()">Stop</button>
+            <button class="b" id="rest" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script src="chapter-43-48.js"></script>
+</body>
+
+</html>

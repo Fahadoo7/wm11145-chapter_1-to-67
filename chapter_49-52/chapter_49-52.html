@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    #main {
+        text-align: center;
+        background-color: yellow;
+        width: 50%;
+        padding: 20px;
+        font-size: 1.5em;
+        box-shadow: 2px 2px 3px 2px yellowgreen;
+    }
+
+    #eml {
+        margin-right: 25px;
+    }
+
+    button {}
+
+    /* task 2 */
+    #para {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 50%;
+    }
+
+    #readmore {
+        display: none;
+    }
+
+    /* task 3 */
+    #mainForm{
+        background-color: teal;
+        color: white;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 1.5em;
+        width: 50%;
+    }
+    #name{
+        margin-left:  90px; ;
+    }
+    #fname{
+        margin-left:  22px; ;
+    }
+    #age{
+        margin-left:  107px; ;
+    }
+    #table{
+        margin-top: 5px;
+        border: 1px black solid;
+        width: 80%;
+        color: white;
+        background-color: brown;
+    }
+    th,td{
+        border: 1px white solid;
+    }
+    #bttn{
+        margin-left: 195px;
+        width: 20%;
+        background-color: goldenrod;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div id="main">
+        <h1>Sign in Form</h1>
+        <div><label id='eml' for="email">Email</label>
+            <input id="email" type="text"></div>
+        <div>
+            <label for="pasword">Pasword</label>
+            <input type="password" name="" id="pasword">
+        </div>
+        <button type="submit" onclick="getData()">submit</button>
+    </div>
+
+    <ul id="lst">
+
+
+
+    </ul>
+    <div id="para">
+        <p>Motivation is your desire to do something
+            with your personal life, at work, in school, in sports
+            <span id="dots">....</span><span id="readmore">or in any
+                hobbies. Having the motivation to do something can help
+                you achieve your big goals and dreams, whatever they may
+                be</span>
+            <button id="btn" onclick="readO()">Read More</button>
+        </p>
+
+    </div>
+
+    <div id="mainForm">
+        <p >Unlimited Data Entry</p>
+        <div><label for="name">Name</label>
+            <input id="name" type="text"></div>
+        <div><label for="fname">Father Name</label>
+            <input id="fname" type="text"></div>
+        <div><label for="age">Age</label>
+            <input id="age" type="number"></div>
+        <button id="bttn" type="submit" onclick="getIn()">submit</button>
+    </div>
+    <table  id='table'>
+        
+        <tr><th>Name</th><th>Father Name</th><th>Age</th></tr>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="chapter-49-52.js"></script>
+</body>
+
+</html>

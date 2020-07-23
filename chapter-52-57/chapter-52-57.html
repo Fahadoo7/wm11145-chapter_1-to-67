@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>chapter-52-57</title>
+    <style>
+        .format {
+
+            width: 250px;
+            height: 230px;
+
+        }
+
+
+        /* Modal starts */
+
+        /* The Modal (background) */
+
+        .modal {
+            display:none ;
+            position: fixed;
+            z-index: 500;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Modal Content (image) */
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+
+        .modal-open {
+            animation-name: zoomIn;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .modal-close {
+            animation-name: zoomOut;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoomOut {
+            from {
+                transform: scale(1)
+            }
+            to {
+                transform: scale(0)
+            }
+        }
+
+
+
+        /* The Close Button */
+
+        .close {
+            position: absolute;
+            top: 50px;
+            right: 10%;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: normal;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* modal ends */
+        #para{
+            background-color: brown;
+            width:50%;
+            margin:10px;
+            padding:5px;
+            font-size :20px; ;
+            
+             }
+    
+    </style>
+   
+</head>
+
+<body>
+
+    <!-- Modal work -->
+    <div id="modal" class="modal">
+        <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+        <img class="modal-content" id="modal-img" >
+    </div>
+    <div id="mywork">
+        <img src="2.jpg" class="format" alt="" onclick="getOpen('2.jpg')">
+        <img src="3.jpg" class="format" alt="" onclick="getOpen('3.jpg')">
+        <img src="4.png" class="format" alt="" onclick="getOpen('4.png')">
+        <img src="1.jpg" class="format" alt="" onclick="getOpen('1.jpg')">
+    </div>
+    <div id="para">
+        <p>Hello how are you remember me in your pryers </p>
+        <button onclick="zoomIn()">Zoom</button>
+        <button onclick="zoomOut()">Zoom Out</button>
+    </div>
+<script src="chapter-52-57.js"></script>
+</body>
+
+</html>
